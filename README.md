@@ -48,6 +48,7 @@ Optimizacija performansi: Kreirani su GiST (Generalized Search Tree) prostorni i
 **8.11.2026**
 Implemented spatial proximity analysis using ST_DWithin and GiST indexing to instantly identify at-risk, non-flooded forest parcels within a 50-meter radius of the flood zone (execution time: 226 ms)."
 
+"Performed a spatial dissolve using ST_Union to merge thousands of fragmented flood geometries into a single, continuous vector polygon, drastically optimizing the layer for web mapping and rendering."
 
 
 
