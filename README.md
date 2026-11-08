@@ -45,6 +45,9 @@ GROUP BY
 
 Optimizacija performansi: Kreirani su GiST (Generalized Search Tree) prostorni indeksi nad geometrijama šumskih parcela i poplavnog talasa, čime je vreme izvršavanja kompleksnog ST_Intersects upita redukovano sa ~6 minuta na 82 milisekunde.
 
+**8.11.2026**
+Implemented spatial proximity analysis using ST_DWithin and GiST indexing to instantly identify at-risk, non-flooded forest parcels within a 50-meter radius of the flood zone (execution time: 226 ms)."
+
 
 
 
