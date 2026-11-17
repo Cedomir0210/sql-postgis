@@ -51,6 +51,14 @@ Implemented spatial proximity analysis using ST_DWithin and GiST indexing to ins
 "Performed a spatial dissolve using ST_Union to merge thousands of fragmented flood geometries into a single, continuous vector polygon, drastically optimizing the layer for web mapping and rendering."
 
 
+select s.fid as idetifikator, p."DN" as dubina
+from terrain_poli_reka_raca as s
+join poli_poplava_divcibare_ndvi_change_detection as p
+on st_intersects(s.geom, p.geom)
+where p."DN" > 1
+
+
+
 
 
 
